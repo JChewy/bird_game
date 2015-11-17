@@ -1,3 +1,142 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "bourbon";
+
+@font-face {
+	font-family: 'Munro Regular';
+	src: font-url('Munro.ttf') format('truetype'),
+		 font-url('MunroNarrow.ttf') format('truetype'),
+		 font-url('MunroSmall.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    width: 100%;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin-left: 0;
+    margin-top: 0;
+
+}
+
+
+/*========================================
+             Login Page
+=========================================*/
+
+#homewrapper {
+	background-image: url("flappy.gif");
+	background-size: cover;
+    height: 100vh;
+    top: 0; bottom: 0; left: 0; right: 0;
+    display: block;
+    margin-top: 0px;
+    bottom: 0px;
+    position: fixed;
+	
+	h1 {
+		margin-top:80px;
+		text-align:center;
+		font-smooth:never;
+		-webkit-font-smoothing: none;
+		font-family: 'Munro Regular';
+		color:white;
+	}
+	#login_box {
+		margin: 0 auto;
+		width: 450px;
+	    height: 240px;
+	    margin: 120px auto;
+	    background: white;
+	    display: block;
+	    text-align:center;
+	    background: rgba(255, 255, 255, 0.5);
+	   	border-radius:10px;
+	}
+	.login_field {
+		margin-top: 50px;
+		font-size: 15px;
+	    border:none;
+	    border: groove 1px;    
+	    border-radius:3px;
+	    margin-left:5px;
+	}
+	.login_button {
+		@include linear-gradient(#6BEDFF, #7BFF66);
+	    padding:5px;
+	    width: 65px;
+	    border: none !important;    
+	    text-transform: uppercase;
+	    font-size: 10px;
+	    margin-left:5px;
+	    border-radius: 3px;
+	}
+	.sclick {
+	    margin:0 auto;
+	    text-align:center;
+	    width:200px;
+	    @include linear-gradient(#6BEDFF, #7BFF66);
+	    border-radius:3px;
+	    margin-top:40px;
+	    color:black;
+	}
+	.sbutton {
+    	color:black;
+    }
+}
+
+/*========================================
+             Profile Page
+=========================================*/
+
+.container {
+	margin: 0 auto;
+	margin-top:50px;
+
+	.side_column {
+		margin-top:20px;
+		float:left;
+		position: fixed;
+		
+	}
+	h2 {
+		float:left;
+		margin-left: 180px;
+		font-size: 35px;
+	}
+	p {
+		font-size: 35px;
+	}
+
+	.right_side_profile {
+		margin:0 auto;
+		float:left;
+		width: 80%;
+		margin-left: 180px;
+	}
+	.edit_label {
+        float: left;
+        text-align: right;
+        margin-right: 15px;
+        width: 100px;
+        padding-top: 5px;
+        font-size:15px;
+	}
+	.edit_info {
+		margin:0 auto;
+        padding: 6px;
+        width: 300px;
+        font-family: Helvetica, sans-serif;
+        font-size: 15px;
+        margin: 10px 0px 10px 0px;
+	}
+	.update_button {
+		margin-top:20px;
+		margin-left:115px;
+        width: 80px;
+       
+	}
+	.deletion {
+		color:red;
+	}
+}

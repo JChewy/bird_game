@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'devise'
 gem 'bourbon'
+gem 'devise'
 gem 'paperclip'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'

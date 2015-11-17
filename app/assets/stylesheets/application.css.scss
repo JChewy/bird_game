@@ -2,11 +2,13 @@
 @import "bootstrap";
 @import "bourbon";
 
+
 @font-face {
-	font-family: 'Munro Regular';
-	src: font-url('Munro.ttf') format('truetype'),
-		 font-url('MunroNarrow.ttf') format('truetype'),
-		 font-url('MunroSmall.ttf') format('truetype');
+	font-family: 'Munro';
+	src: url('/assets/Munro.ttf');
+    src: url('/assets/Munro.ttf?iefix') format('truetype'),
+         url('/assets/MunroNarrow.ttf') format('truetype'),
+         url('/assets/MunroSmall.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -39,14 +41,15 @@ body {
 		text-align:center;
 		font-smooth:never;
 		-webkit-font-smoothing: none;
-		font-family: 'Munro Regular';
+		font-family: 'Munro';
 		color:white;
+		font-size: 80px;
 	}
 	#login_box {
 		margin: 0 auto;
 		width: 450px;
 	    height: 240px;
-	    margin: 120px auto;
+	    margin: 60px auto;
 	    background: white;
 	    display: block;
 	    text-align:center;
@@ -55,11 +58,14 @@ body {
 	}
 	.login_field {
 		margin-top: 50px;
-		font-size: 15px;
 	    border:none;
 	    border: groove 1px;    
 	    border-radius:3px;
 	    margin-left:5px;
+	    font-family: 'Munro';
+	    font-size:18px;
+	    width:160px;
+
 	}
 	.login_button {
 		@include linear-gradient(#6BEDFF, #7BFF66);
@@ -67,9 +73,10 @@ body {
 	    width: 65px;
 	    border: none !important;    
 	    text-transform: uppercase;
-	    font-size: 10px;
 	    margin-left:5px;
 	    border-radius: 3px;
+	    font-family: 'Munro';
+	    font-size:14px;
 	}
 	.sclick {
 	    margin:0 auto;
@@ -79,9 +86,12 @@ body {
 	    border-radius:3px;
 	    margin-top:40px;
 	    color:black;
+	   
 	}
 	.sbutton {
     	color:black;
+    	font-family: 'Munro';
+    	font-size:18px;
     }
 }
 
@@ -138,5 +148,7 @@ body {
 	}
 	.deletion {
 		color:red;
+		font-family: "Munro";
+		font-size:30px;
 	}
 }

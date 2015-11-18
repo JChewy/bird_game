@@ -13,24 +13,36 @@
 	font-style: normal;
 }
 
+$pixel: "Munro";
+
 body {
     width: 100%;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
     margin-left: 0;
     margin-top: 0;
 
 }
-
+.logo_nav {
+	font-family: $pixel;
+	color: white;
+	font-size:30px;
+}
 
 /*========================================
-             Login Page
+             LOGIN PAGE
 =========================================*/
 
 #homewrapper {
 	background-image: url("flappy.gif");
 	background-size: cover;
     height: 100vh;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
     display: block;
     margin-top: 0px;
     bottom: 0px;
@@ -41,16 +53,16 @@ body {
 		text-align:center;
 		font-smooth:never;
 		-webkit-font-smoothing: none;
-		font-family: 'Munro';
+		font-family: $pixel;
 		color:white;
 		font-size: 80px;
+
 	}
 	#login_box {
 		margin: 0 auto;
 		width: 450px;
 	    height: 240px;
 	    margin: 60px auto;
-	    background: white;
 	    display: block;
 	    text-align:center;
 	    background: rgba(255, 255, 255, 0.5);
@@ -58,11 +70,10 @@ body {
 	}
 	.login_field {
 		margin-top: 50px;
-	    border:none;
 	    border: groove 1px;    
 	    border-radius:3px;
 	    margin-left:5px;
-	    font-family: 'Munro';
+	    font-family: $pixel;
 	    font-size:18px;
 	    width:160px;
 
@@ -75,7 +86,7 @@ body {
 	    text-transform: uppercase;
 	    margin-left:5px;
 	    border-radius: 3px;
-	    font-family: 'Munro';
+	    font-family: $pixel;
 	    font-size:14px;
 	}
 	.sclick {
@@ -90,13 +101,118 @@ body {
 	}
 	.sbutton {
     	color:black;
-    	font-family: 'Munro';
+    	font-family: $pixel;
     	font-size:18px;
+    }
+}
+/*========================================
+             SIGNUP PAGE
+=========================================*/
+#signup_wrapper {
+	background-image: url("flap_bird.gif");
+	background-size: cover;
+    height: 100vh;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    display: block;
+    margin-top: 0px;
+    bottom: 0px;
+    position: fixed;
+
+	p {
+	margin-top:80px;
+    color: white;
+    font-family:$pixel;
+    font-size:80px;
+	}
+    .signup {
+        padding-top:10px;
+        padding-bottom:10px;
+        float: right;
+        border:white 5px;
+        border-radius:5px;
+        width:60%;
+        text-align:center;
+        margin-top:30px;
+        border-radius:10px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .signup_info {
+        padding-top: 6px;
+        width: 50%;
+        font-family: $pixel;
+        font-size: 15px;
+        margin: 10px 0px 10px 0px;
+        border:none;
+        border-radius:5px;
+        margin-top:20px;
+    }
+    .signup_button {
+        width: 80px;
+        float:center;
+        @include linear-gradient(#6BEDFF, #7BFF66);
+        border-radius:5px;
+        font-family:$pixel;
+        font-size:17px;
+        border: none;
+        
+    }
+    .back_button {
+        float:center;
+        width: 80px;
+        padding:4px 10px;
+        margin-left:10px;
+        text-align:center;
+        @include linear-gradient(#6BEDFF, #7BFF66);
+        font-family:$pixel;
+        font-size:19px;
+        border-radius:5px;
     }
 }
 
 /*========================================
-             Profile Page
+          FORGOT PASSWORD PAGE
+=========================================*/
+
+/*========================================
+                NAVBAR
+=========================================*/
+.logo_nav {
+	font-family: $pixel;
+	color: white;
+	font-size:30px;
+}
+a:hover {
+	text-decoration:none;
+	color:white;
+}
+/*========================================
+               GAME PAGE
+=========================================*/
+#game_wrapper {
+	background: linear-gradient(#6BEDFF, #7BFF66);
+
+    height: 100vh;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    display: block;
+    margin-top: 0px;
+    bottom: 0px;
+    position: fixed;
+    
+	#game > canvas {
+  		margin: 0 auto;
+  		margin-top:80px;
+  		border: black inset 5px;
+	}
+}
+
+/*========================================
+             PROFILE PAGE
 =========================================*/
 
 .container {
@@ -148,7 +264,8 @@ body {
 	}
 	.deletion {
 		color:red;
-		font-family: "Munro";
+		font-family: $pixel;
 		font-size:30px;
+		box-shadow: 3px 3px 6px black;
 	}
 }

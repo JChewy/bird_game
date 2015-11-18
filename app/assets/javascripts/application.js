@@ -13,10 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require phaser.min
 //= require bootstrap-sprockets
 //= require_tree .
 
 $(document).ready(function() {
-	$(".info").fadeIn("fast").fadeOut(3000);
-	$(".alert").fadeIn("fast").fadeOut(3000);
+	$(".info").fadeIn("fast").fadeOut(2000);
+	$(".alert").fadeIn("fast").fadeOut(2000);
 });

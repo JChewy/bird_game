@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'phaser-rails'
 gem 'bourbon'
 gem 'devise'
 gem 'paperclip'

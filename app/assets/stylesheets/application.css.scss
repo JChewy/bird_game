@@ -193,7 +193,6 @@ a:hover {
 =========================================*/
 #game_wrapper {
 	background: linear-gradient(#6BEDFF, #7BFF66);
-
     height: 100vh;
     top: 0; 
     bottom: 0; 
@@ -203,11 +202,31 @@ a:hover {
     margin-top: 0px;
     bottom: 0px;
     position: fixed;
-    
-	#game > canvas {
+	
+	.game_position {
+		width:45%;
+		padding:10px;
+
+	}
+	#game{
+
+		float:left;
   		margin: 0 auto;
-  		margin-top:80px;
-  		border: black inset 5px;
+  		margin-top:140px;
+  		border: inset 2px;
+	}
+	.chatbox {
+		text-align:center;
+		float:left;
+		margin-top:190px;
+		width:45%;
+		padding:10px;
+	}
+	.mani {
+		border: inset 2px;
+		width:500px;
+		height:400px;
+		color:blue;
 	}
 }
 
@@ -215,7 +234,7 @@ a:hover {
              PROFILE PAGE
 =========================================*/
 
-.container {
+.wrapper {
 	margin: 0 auto;
 	margin-top:50px;
 

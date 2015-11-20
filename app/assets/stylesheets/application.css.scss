@@ -285,17 +285,31 @@ a:hover {
     margin-top: 0px;
     bottom: 0px;
     position: fixed;
-	
+.container {
+
+  float: none;
+  margin-top:10%;
+   margin-right: auto;
+   margin-left: auto;
+
+
+	// .jumbotron {
+	//   position: absolute;
+	//   top: 50%;
+	//   left:50%;
+	//   transform: translate(-50%,-50%);
+	//   border: 1px dashed deeppink;	
+	}
 	.game_position {
-		width:45%;
+	
 		padding:10px;
 
 	}
 	#game{
-		position: fixed;
+		// position: fixed;
 	  	top: 50%;
-	  	left: 38%;
-	    transform: translate(-50%, -50%);
+	 //  	left: 38%;
+	    // transform: translate(-50%, -50%);
   		margin: 0 auto;
   		
   		border: inset 2px;
@@ -306,15 +320,14 @@ a:hover {
 		padding:10px;
 	}
 	.mani {
-		position: fixed;
-	  	top: 50%;
-	  	left: 78%;
-	    transform: translate(-50%, -50%);
+		// position: fixed;
+	 //  	left: 78%;
+	 //    transform: translate(-50%, -50%);
 		border: inset 2px;
-		width:300px;
+	
 		height:400px;
 		color:blue;
-	}
+}
 }
 
 /*========================================

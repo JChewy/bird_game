@@ -21,7 +21,7 @@
 
   <div class="sclick">
     <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-      <%= link_to "Forgot your password?", new_password_path(resource_name), class: "sbutton" %><br />
+      <%= link_to "Forgot your password?", forgot_password_path(resource_name), class: "sbutton" %><br />
     <% end -%>
   </div>
 

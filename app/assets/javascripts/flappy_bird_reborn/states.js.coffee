@@ -32,7 +32,7 @@
       @load.onLoadComplete.addOnce(@onLoadComplete, @)
       @load.setPreloadSprite(@asset)
 
-      @load.image('background', '/flappy_bird_reborn/images/background.png')
+      @load.image('white', '/flappy_bird_reborn/images/white.jpg')
       @load.image('ground', '/flappy_bird_reborn/images/ground.png')
       @load.image('title', '/flappy_bird_reborn/images/title.png')
       @load.image('startButton', '/flappy_bird_reborn/images/start-button.png')
@@ -76,10 +76,10 @@
   Menu: class Menu extends Phaser.State
     create: ->
       # add the background sprite
-      @background = @game.add.sprite(0, 0, 'background')
+      @background = @game.add.sprite(0, 0, 'white')
 
       # add the ground sprite as a tile and start scrolling in the negative x direction
-      @ground = @game.add.tileSprite(0, 400, 335, 112, 'ground')
+      @ground = @game.add.tileSprite(0, 400, 800, 112, 'ground')
       @ground.autoScroll(-200, 0)
 
       # create a group to put the title assets in so they can be manipulated as a whole
@@ -126,7 +126,7 @@
       @game.physics.arcade.gravity.y = 1200
 
       # add the background sprite
-      @background = @game.add.sprite(0, 0, 'background')
+      @background = @game.add.sprite(0, 0, 'white')
 
       # create a new bird object and add it to the game
       @bird = new Sprites.Bird(@game, 100, @game.height / 2)
@@ -136,7 +136,7 @@
       @pipes = @game.add.group()
 
       # create and add a new Ground object
-      @ground = new Sprites.Ground(@game, 0, 400, 335, 112)
+      @ground = new Sprites.Ground(@game, 0, 400, 900, 112)
       @game.add.existing(@ground)
 
       # create a group for instruction

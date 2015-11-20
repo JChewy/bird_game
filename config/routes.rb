@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   devise_scope :user do
     delete "/logout" => "devise/sessions#destroy"
     get "deletion" => "home#deletion"
+    get "forgot_password" => "home#forgot_password"
   end
 
   resources :game, only: [:index]

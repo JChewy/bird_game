@@ -1,10 +1,3 @@
-# 'Flappy Bird Reborn'
-#
-# last update: 2014.05.16.
-#
-
-# Groups
-#
 @Groups = {
   Pipe: class Pipe extends Phaser.Group
     constructor: (game, parent) ->

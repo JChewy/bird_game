@@ -1,10 +1,3 @@
-# 'Flappy Bird Reborn'
-#
-# last update: 2014.04.16.
-#
-
-# Sprites
-#
 @Sprites = {
   # bird sprite
   Bird: class Bird extends Phaser.Sprite

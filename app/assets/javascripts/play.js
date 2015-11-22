@@ -45,7 +45,7 @@ function PlayState() {}
       };
 
       // creating bird instances
-      this.bird = new Bird(this.game, 200, this.game.height/2);
+      this.bird = new Bird(this.game, 450, this.game.height/2);
       var r = this.bird;
       this.game.add.existing(this.bird);
       // this.bird.body.collideWorldBounds = true; 
@@ -53,7 +53,7 @@ function PlayState() {}
       this.bird.animations.play('flap', 12, true);
       this.bird.events.onOutOfBounds.add(this.deathHandler, this); 
 
-      this.bird2 = new Bird(this.game, 100, this.game.height/2); 
+      this.bird2 = new Bird(this.game, 350, this.game.height/2); 
       this.game.add.existing(this.bird2); 
       this.bird2.alive = true; 
       this.bird2.animations.play('flap', 12, true); 
@@ -172,7 +172,7 @@ function PlayState() {}
             this.ground.destroy(); 
             // this.game.state.start('gameover'); 
 
-            text = game.add.text(20, 400, 'Spacebar to Play Again', { font: "20px Arial", fill: "blue", align: "center" });
+            text = game.add.text(20, 400, 'Spacebar to Play Again', { font: "40px Munro", fill: "blue", align: "center" });
 
             // this.scoreboard = new Scoreboard(this.game);
             // this.game.add.existing(this.scoreboard);

@@ -303,20 +303,25 @@ a:hover {
 		width:50px;
 	}
 }
-.mani {
-		top:37%;
-		position: fixed;
-	  	left: 82%;
-	    transform: translate(-50%, -50%);
-		height:405px;
-		display:block;
+iframe {
+	float:right;
+	top:40%;
+	margin-right:40px;
 }
-.content{
-		margin-top:100px;
-	}
+
+.mani {
+	height:405px;
+	display:block;
+}
+
+.content {
+	margin-top:100px;
+}
+
 .bottom {
 	margin-top:10px;
 }
+
 h3 {
 	text-align:center;
 }

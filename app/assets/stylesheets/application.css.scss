@@ -274,6 +274,7 @@ a:hover {
 /*========================================
                GAME PAGE
 =========================================*/
+
 #game_wrapper {
 	background: linear-gradient(#6BEDFF, #7BFF66);
     height: 100vh;
@@ -285,21 +286,23 @@ a:hover {
     margin-top: 0px;
     bottom: 0px;
     position: fixed;
-// .container {
-// 	top:50%
-// 	}
+	#box {
+		width:90%;
+	}
+	.game_position {
+		width:70%;
+	}
 	#game{
 		position: fixed;
 	  	top: 50%;
 	   	left: 38%;
 	    transform: translate(-50%, -50%);
   		margin: 0 auto;
-  		
-  	
+ 	
 	}
 	.chatbox {
 		text-align:center;
-		width:45%;
+		width:20%;
 		padding:10px;
 	}
 	.mani {
@@ -307,8 +310,7 @@ a:hover {
 		position: fixed;
 	  	left: 78%;
 	    transform: translate(-50%, -50%);
-	
-		height:400px;
+		height:505px;
 }
 }
 

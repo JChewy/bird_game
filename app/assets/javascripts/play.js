@@ -172,7 +172,7 @@ function PlayState() {}
             this.ground.destroy(); 
             // this.game.state.start('gameover'); 
 
-            text = game.add.text(20, 400, 'Spacebar to Play Again', { font: "40px Munro", fill: "blue", align: "center" });
+            text = game.add.text(20, 400, 'Spacebar to Play Again', { font: "40px Munro", fill: "white", align: "center" });
 
             // this.scoreboard = new Scoreboard(this.game);
             // this.game.add.existing(this.scoreboard);

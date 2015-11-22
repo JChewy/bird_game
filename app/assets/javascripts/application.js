@@ -14,5 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require phaser.min
+//= require phaser
+//= require play
+//= require menu
+//= require preload
+//= require boot
+//= require game
 //= require bootstrap-sprockets
 //= require_tree .

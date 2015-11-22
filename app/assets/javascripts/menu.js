@@ -9,7 +9,7 @@ MenuState.prototype = {
     //background image
     this.background = this.game.add.sprite(0, 0, 'background_two');
     //sidescrolling ground
-    this.ground = this.game.add.tileSprite(0,400,800, 112, 'ground');
+    this.ground = this.game.add.tileSprite(0,350,800, 112, 'ground');
     this.ground.autoScroll(-200,0);
 
     //Title assets
@@ -21,12 +21,15 @@ MenuState.prototype = {
     this.bird = this.game.add.sprite(200,100,'bird');
     this.titleGroup.add(this.bird);
 
+    // this.bird = this.game.add.sprite(200, 100, 'bird2');
+    // this.titleGroup.add(this.bird);
+
     //animating the bird
     this.bird.animations.add('flap');
     this.bird.animations.play('flap', 12, true);
 
     //setting the origin of the title
-    this.titleGroup.x = 30;
+    this.titleGroup.x = 300;
     this.titleGroup.y = 0;
     
     //get schwifty 

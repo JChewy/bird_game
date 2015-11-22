@@ -53,7 +53,38 @@ function PlayState() {}
       this.bird.animations.play('flap', 12, true);
       this.bird.events.onOutOfBounds.add(this.deathHandler, this); 
 
-      this.bird2 = new Bird(this.game, 350, this.game.height/2); 
+        //bird class
+      var Bird2 = function(game, x, y, frame) {
+        Phaser.Sprite.call(this, game, x, y, 'bird2', frame);
+        this.anchor.setTo(0.5, 0.5);
+        
+        // add flap animation and begin playing it
+        this.animations.add('flap');
+        // this.animations.play('flap', 12, true);
+        
+
+        // enable physics on the bird
+        this.game.physics.arcade.enableBody(this);
+        this.checkWorldBounds = true; 
+        this.outOfBoundsKill = true; 
+        
+      };
+      //bird maker
+      function generateBird2() {  
+        var bird = this.birdGroup.getFirstExists(false);
+        if(!bird) {
+            bird = new Bird(this.game, x, y);
+            this.birdGroup.add(bird);
+        }
+        bird.reset(x, y);
+      };
+
+      Bird2.prototype = Object.create(Phaser.Sprite.prototype);
+      Bird2.prototype.constructor = Bird;
+      Bird2.prototype.update = function() {
+      };
+
+      this.bird2 = new Bird2(this.game, 350, this.game.height/2); 
       this.game.add.existing(this.bird2); 
       this.bird2.alive = true; 
       this.bird2.animations.play('flap', 12, true); 
@@ -92,7 +123,7 @@ function PlayState() {}
 
       };
       //adding the ground
-      this.ground = new Ground(this.game, 0, 400, 800, 112);
+      this.ground = new Ground(this.game, 0, 350, 800, 112);
       this.ground.autoScroll(-200,0); 
       this.game.add.existing(this.ground);
 
@@ -172,7 +203,7 @@ function PlayState() {}
             this.ground.destroy(); 
             // this.game.state.start('gameover'); 
 
-            text = game.add.text(20, 400, 'Spacebar to Play Again', { font: "40px Munro", fill: "white", align: "center" });
+            text = game.add.text(215, 300, 'Spacebar to Play Again', { font: "40px Munro", fill: "white", align: "center" });
 
             // this.scoreboard = new Scoreboard(this.game);
             // this.game.add.existing(this.scoreboard);

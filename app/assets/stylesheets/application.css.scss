@@ -16,13 +16,15 @@
 $pixel: "Munro";
 
 body {
-    width: 100%;
+    background: linear-gradient(#6BEDFF, #7BFF66);
+    height: 100vh;
     top: 0; 
     bottom: 0; 
     left: 0; 
     right: 0;
-    margin-left: 0;
-    margin-top: 0;
+    display: block;
+    margin-top: 0px;
+    bottom: 0px;
 
 }
 .logo_nav {
@@ -198,11 +200,6 @@ body {
     margin-top: 0px;
     bottom: 0px;
     position: fixed;
-	// .bird {
-	// 	width:200px;
-	// 	height:200px;
-	// 	color:blue;
-	// }
 	
 	.password_box {
 		border: white 2px;
@@ -275,7 +272,7 @@ a:hover {
                GAME PAGE
 =========================================*/
 
-#game_wrapper {
+.game_wrapper {
 	background: linear-gradient(#6BEDFF, #7BFF66);
     height: 100vh;
     top: 0; 
@@ -286,34 +283,53 @@ a:hover {
     margin-top: 0px;
     bottom: 0px;
     position: fixed;
-	#box {
-		width:90%;
-	}
-	.game_position {
-		width:70%;
-	}
-	#game{
+
+	#game {
 		position: fixed;
-	  	top: 50%;
-	   	left: 38%;
+	  	top:65%;
+	   	left: 36%;
 	    transform: translate(-50%, -50%);
   		margin: 0 auto;
+  		display:block;
  	
 	}
 	.chatbox {
 		text-align:center;
-		width:20%;
 		padding:10px;
 	}
-	.mani {
-		top:50%;
+	
+	li {
+		height:50px;
+		width:50px;
+	}
+}
+.mani {
+		top:37%;
 		position: fixed;
-	  	left: 78%;
+	  	left: 82%;
 	    transform: translate(-50%, -50%);
-		height:505px;
+		height:405px;
+		display:block;
 }
+.content{
+		margin-top:100px;
+	}
+.bottom {
+	margin-top:10px;
 }
+h3 {
+	text-align:center;
+}
+ul {
+	list-style-type: none;
+	}
 
+img {
+	height:150px;
+	}
+.birdy {
+	height:40px;
+}
 /*========================================
              PROFILE PAGE
 =========================================*/

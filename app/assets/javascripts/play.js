@@ -238,7 +238,7 @@ function PlayState() {}
 
 
       // bird 1 actions
-       this.bird.body.velocity.x = 10;
+       this.bird.body.velocity.x = 0;
 
        if (cursors.left.isDown && this.game.time.events.running === true)
         {
@@ -270,7 +270,7 @@ function PlayState() {}
 
 
       // //bird2 actions
-        this.bird2.body.velocity.x = 10;
+        this.bird2.body.velocity.x = 0;
 
         if (keyA.isDown && this.game.time.events.running === true)
         {

@@ -33,6 +33,7 @@ MenuState.prototype = {
     this.titleGroup.y = 0;
     
     //get schwifty 
+    //in other words this makes the title "tween" up and down
     this.game.add.tween(this.titleGroup).to({y:15}, 350, Phaser.Easing.Linear.NONE, true, 0, 1000, true);
 
     //adding button 

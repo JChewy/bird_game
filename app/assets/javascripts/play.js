@@ -51,7 +51,7 @@ function PlayState() {}
       // this.bird.body.collideWorldBounds = true; 
       this.bird.alive = true;
       this.bird.animations.play('flap', 12, true);
-      this.bird.events.onOutOfBounds.add(this.deathHandler, this); 
+      this.bird.events.onOutOfBounds.add(this.GameOver, this); 
 
         //bird class
       var Bird2 = function(game, x, y, frame) {
@@ -88,7 +88,7 @@ function PlayState() {}
       this.game.add.existing(this.bird2); 
       this.bird2.alive = true; 
       this.bird2.animations.play('flap', 12, true); 
-      this.bird2.events.onOutOfBounds.add(this.deathHandler, this); 
+      this.bird2.events.onOutOfBounds.add(this.GameOver, this); 
       // this.bird2.body.collideWorldBounds = true;
 
        //flap action bird1
@@ -196,18 +196,12 @@ function PlayState() {}
 
 
         // gameover state
-        deathHandler: function() {
+        GameOver: function() {
 
             this.game.time.events.running = false; 
             this.ground.autoScroll(0,0); 
             this.ground.destroy(); 
-            // this.game.state.start('gameover'); 
-
             text = game.add.text(215, 300, 'Spacebar to Play Again', { font: "40px Munro", fill: "white", align: "center" });
-
-            // this.scoreboard = new Scoreboard(this.game);
-            // this.game.add.existing(this.scoreboard);
-            // this.scoreboard.show(this.score);
         },
 
 
@@ -217,24 +211,19 @@ function PlayState() {}
     update: function() {
 
       //collision physics
-      this.game.physics.arcade.collide(this.bird, this.ground, this.deathHandler, null, this);
-      this.game.physics.arcade.collide(this.bird2, this.ground, this.deathHandler, null, this); 
-      this.game.physics.arcade.collide(this.orlandoGroup, this.bird, this.deathHandler, null, this);
-      this.game.physics.arcade.collide(this.orlandoGroup, this.bird2, this.deathHandler, null, this); 
-      this.game.physics.arcade.collide(this.ballgroup, this.bird2, this.deathHandler, null, this);
+      this.game.physics.arcade.collide(this.bird, this.ground, this.GameOver, null, this);
+      this.game.physics.arcade.collide(this.bird2, this.ground, this.GameOver, null, this); 
+      this.game.physics.arcade.collide(this.orlandoGroup, this.bird, this.GameOver, null, this);
+      this.game.physics.arcade.collide(this.orlandoGroup, this.bird2, this.GameOver, null, this); 
+      this.game.physics.arcade.collide(this.ballgroup, this.bird2, this.GameOver, null, this);
       this.game.physics.arcade.collide(this.bird, this.bird2); 
-      this.game.physics.arcade.collide(this.bird, this.checkworldBounds, this.deathHandler, null, this); 
-      this.game.physics.arcade.collide(this.bird2, this.checkWorldBounds, this.deathHandler, null, this); 
-      this.game.physics.arcade.collide(this.bird, this.ballGroup, this.deathHandler, null, this); 
-      this.game.physics.arcade.collide(this.bird2, this.ballGroup, this.deathHandler, null, this); 
-      this.game.physics.arcade.collide(this.bird, this.orlandoGroup2, this.deathHandler, null, this); 
-      this.game.physics.arcade.collide(this.bird2, this.orlandoGroup2, this.deathHandler, null, this); 
+      this.game.physics.arcade.collide(this.bird, this.checkworldBounds, this.GameOver, null, this); 
+      this.game.physics.arcade.collide(this.bird2, this.checkWorldBounds, this.GameOver, null, this); 
+      this.game.physics.arcade.collide(this.bird, this.ballGroup, this.GameOver, null, this); 
+      this.game.physics.arcade.collide(this.bird2, this.ballGroup, this.GameOver, null, this); 
+      this.game.physics.arcade.collide(this.bird, this.orlandoGroup2, this.GameOver, null, this); 
+      this.game.physics.arcade.collide(this.bird2, this.orlandoGroup2, this.GameOver, null, this); 
 
-
-         // game.time.events.repeat(Phaser.Timer.SECOND * 1, 1000, createOrlando, this);
-
-
-      // this.game.physics.arcade.collide(this.ballgroup, this.ground); 
 
 
       // bird 1 actions
@@ -295,12 +284,6 @@ function PlayState() {}
       
 
     },
-
-    // shutdown: function() {  
-    //   this.game.input.keyboard.removeKey(Phaser.Keyboard.SPACEBAR);
-    //   this.bird.destroy();
-    //   this.ballgroup.destroy();
-    // }
 
   };
   

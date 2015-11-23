@@ -18,16 +18,17 @@ Preload.prototype = {
     this.load.image('ball', 'assets/pangball.png');
     this.load.spritesheet('bird', 'assets/bird.png', 34, 24, 3);
     this.load.image('bird2', 'assets/bird.gif', 34, 24, 3);
-    this.load.image('orlando', 'assets/orlandos.png'); 
-    this.load.image('scoreboard', 'assets/scoreboard.png'); 
-    this.load.image('gameover', 'assets/gameover.png'); 
+    this.load.image('orlando', 'assets/orlandos.png');
+    this.load.image('scoreboard', 'assets/scoreboard.png');
+    this.load.image('gameover', 'assets/gameover.png');
 
 },
   create: function() {
     this.asset.cropEnabled = false;
 
-          var counter = 0;
+      var counter = 0;
       var text = 0;
+
       //counter
       function updateCounter() {
         counter++;
@@ -44,6 +45,7 @@ Preload.prototype = {
       this.game.state.start('menu');
     }
   },
+
   onLoadComplete: function() {
     this.ready = true;
   }

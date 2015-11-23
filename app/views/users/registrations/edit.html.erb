@@ -36,7 +36,6 @@
       <div class="field">
         <%= f.password_field :password, autocomplete: "off", class: "edit_info", placeholder: "Password" %>
         <%= f.label "Password:", class: "edit_label" %> <i>(Leave blank if you don't want to change it)</i>
-      
       </div>
     
       <div class="field">
@@ -47,13 +46,14 @@
       <div class="field">
         <%= f.password_field :current_password, autocomplete: "off", class: "edit_info", placeholder: "Current Password" %>
         <%= f.label "Current Password:", class: "edit_label" %> <i>(Enter your current password to confirm your changes)</i>
-       
       </div>
       
       <div class="actions">
         <%= f.submit "Update", class: "update_button" %>
       </div>
+
     <% end %>
+    
   </div>
 
 </div>

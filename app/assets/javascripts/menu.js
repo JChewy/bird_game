@@ -21,9 +21,6 @@ MenuState.prototype = {
     this.bird = this.game.add.sprite(200,100,'bird');
     this.titleGroup.add(this.bird);
 
-    // this.bird = this.game.add.sprite(200, 100, 'bird2');
-    // this.titleGroup.add(this.bird);
-
     //animating the bird
     this.bird.animations.add('flap');
     this.bird.animations.play('flap', 12, true);
@@ -43,7 +40,7 @@ MenuState.prototype = {
 
   //creating the callback for the button
   startClick: function(){
-  	this.state.start('play');
+	 this.state.start('play');
   },
 
   update: function(){

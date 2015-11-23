@@ -63,6 +63,7 @@ body {
 		font-size: 80px;
 
 	}
+
 	#login_box {
 		position: fixed;
 	  	top: 50%;
@@ -76,6 +77,7 @@ body {
 	    background: rgba(255, 255, 255, 0.5);
 	   	border-radius:10px;
 	}
+
 	.login_field {
 		margin-top: 50px;
 	    border: groove 1px;    
@@ -86,6 +88,7 @@ body {
 	    width:160px;
 
 	}
+
 	.login_button {
 		@include linear-gradient(#6BEDFF, #7BFF66);
 	    padding:5px;
@@ -97,6 +100,7 @@ body {
 	    font-family: $pixel;
 	    font-size:14px;
 	}
+
 	.sclick {
 	    margin:0 auto;
 	    text-align:center;
@@ -105,8 +109,8 @@ body {
 	    border-radius:3px;
 	    margin-top:40px;
 	    color:black;
-	   
 	}
+
 	.sbutton {
     	color:black;
     	font-family: $pixel;
@@ -153,6 +157,7 @@ body {
         border-radius:10px;
         background: rgba(255, 255, 255, 0.5);
     }
+
     .signup_info {
         padding-top: 6px;
         width: 50%;
@@ -171,8 +176,8 @@ body {
         font-family:$pixel;
         font-size:17px;
         border: none;
-        
     }
+
     .back_button {
         float:center;
         width: 80px;
@@ -217,13 +222,16 @@ body {
         border-radius:10px;
         background: rgba(255, 255, 255, 0.5);
 	}
+
 	h1 {
 		font-family: $pixel;
 	}
+
 	.emails {
 		font-family:$pixel;
 		font-size:20px;
 	}
+
 	.password_info {
 		
         width: 50%;
@@ -233,6 +241,7 @@ body {
         border:none;
         border-radius:5px;
 	}
+
 	.reset_button {
 		@include linear-gradient(#6BEDFF, #7BFF66);
 	    padding:5px;
@@ -243,6 +252,7 @@ body {
 	    font-family: $pixel;
 	    font-size:14px;
 	}
+
 	.back_button {
 		margin-top:5px;
         width: 80px;
@@ -264,6 +274,7 @@ body {
 	color: white;
 	font-size:30px;
 }
+
 a:hover {
 	text-decoration:none;
 	color:white;
@@ -291,22 +302,18 @@ a:hover {
 	    transform: translate(-50%, -50%);
   		margin: 0 auto;
   		display:block;
- 	
 	}
-	.chatbox {
-		text-align:center;
-		padding:10px;
-	}
-	
+
 	li {
 		height:50px;
 		width:50px;
 	}
 }
+
 iframe {
 	float:right;
 	top:40%;
-	margin-right:40px;
+	margin-right:70px;
 }
 
 .mani {
@@ -319,22 +326,25 @@ iframe {
 }
 
 .bottom {
-	margin-top:10px;
+	margin-top:20px;
 }
 
 h3 {
 	text-align:center;
 }
+
 ul {
 	list-style-type: none;
-	}
+}
 
 img {
 	height:150px;
-	}
+}
+
 .birdy {
 	height:40px;
 }
+
 /*========================================
              PROFILE PAGE
 =========================================*/
@@ -347,13 +357,14 @@ img {
 		margin-top:20px;
 		float:left;
 		position: fixed;
-		
 	}
+
 	h2 {
 		float:left;
 		margin-left: 180px;
 		font-size: 35px;
 	}
+
 	p {
 		font-size: 35px;
 	}
@@ -364,6 +375,7 @@ img {
 		width: 80%;
 		margin-left: 180px;
 	}
+
 	.edit_label {
         float: left;
         text-align: right;
@@ -372,6 +384,7 @@ img {
         padding-top: 5px;
         font-size:15px;
 	}
+
 	.edit_info {
 		margin:0 auto;
         padding: 6px;
@@ -380,12 +393,13 @@ img {
         font-size: 15px;
         margin: 10px 0px 10px 0px;
 	}
+
 	.update_button {
 		margin-top:20px;
 		margin-left:115px;
         width: 80px;
-       
 	}
+
 	.deletion {
 		color:red;
 		font-family: $pixel;

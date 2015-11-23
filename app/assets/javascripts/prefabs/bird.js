@@ -8,5 +8,4 @@ var Bird = function(game, x, y, frame){
 
 	//adding physics 
 	this.game.physics.arcade.enableBody(this);
-
 };
